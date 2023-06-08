@@ -1,0 +1,120 @@
+<html>
+<head>
+<link rel="stylesheet" href="asset/css/boyfriend.css">
+<title> MY BOYFRIEND
+</title>
+</head>
+<body background="asset\image\blur.jpg">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="asset\image\bangtan1.jpg" style="width:100%">
+  <div class="text"> BTS </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="asset\image\bangtan2.jpg" style="width:100%">
+  <div class="text"> BANGTAN SOYEONDAN </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="asset\image\bangtan3.jpg" style="width:100%">
+  <div class="text">  BTS </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br><br><br>
+
+<center>
+<img src="asset\image\namjoon.jpg" width="30%"> </center>
+<br>
+<center> <font size="4" face="cambria"> <b> KIM NAJMOON A.K.A "RAP MONSTER" </font> </center> </b>
+
+<br><br><br>
+
+<center>
+<img src="asset\image\jin.jpg" width="30%"> </center>
+<br>
+<center> <font size="4" face="cambria"> <b> KIM SEOKJIN A.K.A "JIN" </font> </center> </b>
+
+<br><br><br>
+
+<center>
+<img src="asset\image\suga.jpg" width="30%"> </center>
+<br>
+<center> <font size="4" face="cambria"> <b> MIN YOONGI A.K.A "SUGA" </font> </center> </b>
+
+<br><br><br>
+
+<center>
+<img src="asset\image\jhope.jpg" width="30%"> </center>
+<br>
+<center> <font size="4" face="cambria"> <b> JUNG HOSEOK A.K.A "JHOPE" </font> </center> </b>
+
+<br><br><br>
+
+<center>
+<img src="asset\image\jimin.jpg" width="30%"> </center>
+<br>
+<center> <font size="4" face="cambria"> <b> PARK JIMIN A.K.A "JIMIN" </font> </center> </b>
+
+<br><br><br>
+
+<center>
+<img src="asset\image\taehyung.jpg" width="30%"> </center>
+<br>
+<center> <font size="4" face="cambria"> <b> KIM TAEHYUNG A.K.A "V" </font> </center> </b>
+
+<br><br><br>
+
+<center>
+<img src="asset\image\jungkook.jpg" width="30%"> </center>
+<br>
+<center> <font size="4" face="cambria"> <b> JEON JUNGKOOK A.K.A "JUNGKOOK" </font> </center> </b>
+
+
+</body>
+</html>

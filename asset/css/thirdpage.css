@@ -1,0 +1,42 @@
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #F4C7E0;
+  color: black;
+  font-size: 30px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  width: 40%;
+  height: 100%;
+}
+
+video {
+  width: 60%;
+  height: 56.25%;
+  margin-top: 10.875%;
+}
+
+.p3 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+table, th, td , tr {
+  border: 4px solid black;
+  border-radius: 20px;
+}
+

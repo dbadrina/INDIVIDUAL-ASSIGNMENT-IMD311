@@ -1,0 +1,39 @@
+body {
+  font: Helvetica;
+}
+
+
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.pill-nav a:hover {
+  background-color:#F4C7E0;
+  color: black;
+}
+
+.pill-nav a.active {
+  background-color:#FAE9B1;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color:#FAE9B1;
+  color: black;
+}
+
+marquee {
+  font-size: 15px;
+  font-weight: 200;
+  color:black;
+  font-family: cambria;
+}
+
